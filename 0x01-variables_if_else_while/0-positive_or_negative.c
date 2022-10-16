@@ -5,7 +5,8 @@
 /**
   * main - Establish whether number is positive or negative
   *
-  * Description: program assigns random number to variable nwhen executed
+  * Description: program will assign random number to variable n and determine
+  * if negative or positive when executed
   *
   * Return: Always 0 (Success)
   */
