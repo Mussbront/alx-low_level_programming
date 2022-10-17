@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-  * Main - print last digit of number stored in variable n
+  * main - print last digit of number stored in variable n
   *
   * Description: Assign random digit to variable n and print last digit
   *
