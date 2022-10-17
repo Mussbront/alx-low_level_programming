@@ -17,7 +17,7 @@ int main(void)
 		if (i < 10)
 			putchar(i + '0');
 		else if (i > ')')
-			putchar(i - 10 + 'a');
+			putchar(i - 10 + 'A');
 		i++;
 	}
 	putchar('\n');
