@@ -10,38 +10,38 @@
 
 int main(void)
 {
-	int i, j, k, m;
+	int a, b, c, d;
 
-	i = '0';
-	while (i < ':')
+	a = '0';
+	while (a < ':')
 	{
-		j = '0';
-		while (j < ':')
+		b = '0';
+		while (b < ':')
 		{
-			m = j +	1;
-			k = i;
-			while (k < ':')
+			d = b +	1;
+		c = a;
+			while (c < ':')
 			{
-				while (m < ':')
+				while (d < ':')
 				{
-					putchar(i);
-					putchar(j);
+					putchar(a);
+					putchar(b);
 					putchar(' ');
-					putchar(k);
-					putchar(m);
-					if (i < '9' || j < '8' || k < '9' || m < '9')
+					putchar(c);
+					putchar(d);
+					if (a < '9' || b < '8' || c < '9' || d < '9')
 					{
 						putchar(',');
 						putchar(' ');
 					}
-					m++;
+					d++;
 				}
-				m = '0';
-				k++;
+				d = '0';
+				c++;
 			}
-			j++;
+			b++;
 		}
-		i++;
+		a++;
 	}
 	putchar('\n');
 	return (0);
