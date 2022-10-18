@@ -10,31 +10,31 @@
 
 int main(void)
 {
-	int i, j;
+	int x, y;
 
-	i = '0';
+	x = '0';
 
-	j = '0';
+	y = '0';
 
-	while (i < ':')
+	while (x < ':')
 	{
-		j = i + 1;
+		y = x + 1;
 
-		while (j < ':')
+		while (y < ':')
 		{
-			putchar(i);
-			putchar(j);
+			putchar(x);
+			putchar(y);
 
-			if (i < '8' || j < '9')
+			if (x < '8' || y < '9')
 			{
 				putchar(',');
 				putchar(' ');
 			}
 
-			j++;
+			y++;
 		}
 
-		i++;
+		x++;
 	}
 	putchar('\n');
 
