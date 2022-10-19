@@ -3,28 +3,27 @@
 #include <unistd.h>
 
 /**
-  * main - program that prints lowercase alphabet
+  * main - prints alphabet in lowercase
   *
-  * Return: 0 (Success)
+  * Return: Always 0
   */
 
 int main(void)
 {
 	/**
+	  *
 	  * print_alphabet - program that prints alphabet in lowercase
 	  *
 	  * Return: 0 (Success)
-	 */
+	  */
 
 	void print_alphabet(void)
 	{
 		char ch = 'a';
 
-		while (ch <= 'z')
-		{
+		for (ch = 'a'; ch <= 'z'; ch++)
 			_putchar(ch);
-			ch++;
-		}
+
 		_putchar('\n');
 	}
 }
