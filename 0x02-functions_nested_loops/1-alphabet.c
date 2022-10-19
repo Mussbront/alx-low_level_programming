@@ -1,25 +1,17 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <unistd.h>
 
 /**
-  * main - prints alphabet in lowercase
+  * main - prints lowercase alphabet
   *
-  * Description: prints lowercase alphabet, followed by new line
+  * print_alphabet - program that prints lowercase alphabet
   *
-  * Return: Always 0
+  * Return: void
   */
 
 int main(void)
 {
-	/**
-	  *
-	  * print_alphabet - program that prints alphabet in lowercase
-	  *
-	  * Description: Prints alphabet in lowercase followed by new line
-	  *
-	  * Return: 0 (Success)
-	  */
-
 	void print_alphabet(void)
 	{
 		char ch = 'a';
@@ -30,4 +22,6 @@ int main(void)
 
 		_putchar('\n');
 	}
+
+	return (0);
 }
