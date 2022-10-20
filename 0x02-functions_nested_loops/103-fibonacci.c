@@ -1,4 +1,4 @@
-#include <stio.h>
+#include <stdio.h>
 
 /**
   * main - prints sum of all eve Fibonacci numbers below 4,000,000
