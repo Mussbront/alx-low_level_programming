@@ -16,7 +16,7 @@ int main(void)
 	printf("%lu", y);
 
 
-	for (i = 1; i <= 91; i++)
+	for (i = 1; i < 91; i++)
 	{
 		printf(", %lu", z);
 
