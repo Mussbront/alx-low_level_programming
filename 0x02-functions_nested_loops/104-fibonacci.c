@@ -8,24 +8,39 @@
 
 int main(void)
 {
-	unsigned long int x = 0, y = 1, s;
-	int i;
+	unsigned long int x, y, z, y1, y2, z1, z2;
 
-	for (i = 1; i <= 98; i++)
+	y = 1;
+	z = 2;
+
+	printf("%lu", y);
+
+
+	for (i = 1; i <= 91; i++)
 	{
-		s = x + y;
+		printf(", %lu", z);
 
-		if (i != 98)
-		{
-			printf("%lu, ", s);
-		}
-		else
-		{
-			printf("%lu\n", s);
-		}
-
-		x = y;
-		y = s;
+		z  = z + y;
+		y = z - y;
 	}
+
+	y1 = y / 1000000000;
+	y2 = y % 1000000000;
+	z1 = z / 1000000000;
+	z2 = z % 1000000000;
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", z1 + (z2 / 1000000000));
+		printf("%lu", z2 % 1000000000);
+		z1 = z1 + y1;
+		y1 = z1 - y1;
+		z2 = z2 + y2;
+		y2 = z2 - y2;
+
+	}
+
+	printf("\n");
+
 	return (0);
 }
