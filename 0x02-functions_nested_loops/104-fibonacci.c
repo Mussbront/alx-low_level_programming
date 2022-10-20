@@ -11,7 +11,7 @@ int main(void)
 	unsigned long int x = 0, y = 1, s;
 	int i;
 
-	for (i == 1; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		s = x + y;
 
