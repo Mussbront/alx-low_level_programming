@@ -28,11 +28,11 @@ char *_strdup(char *str)
 	if (arr == NULL)
 		return (NULL);
 
-	for (i = 0; i < length, i++)
+	for (i = 0; i < length; i++)
 	{
 		arr[i] = str[i];
 	}
-	arr[i] = '\0'
+	arr[i] = '\0';
 
 	return (arr);
 }
