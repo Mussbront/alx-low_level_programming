@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
+
 	length = 0;
 	while (*(str + length) != '\0')
 	{
@@ -32,7 +32,7 @@ char *_strdup(char *str)
 		arr[i] = str[i];
 	}
 	arr[i] = '\0';
-	
+
 	return (arr);
 }
 /**
@@ -51,14 +51,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
-	
+
 	dog_name = _strdup(name);
 	if (dog_name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
-	
+
 	dog_owner = _strdup(owner);
 	if (dog_owner == NULL)
 	{
