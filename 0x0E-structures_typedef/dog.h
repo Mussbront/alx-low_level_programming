@@ -4,9 +4,9 @@ int _putchar(char c);
 
 /**
   * struct dog - structure for dog
-  * @name: name of dog
-  * @age: age of dog
-  * @owner: name of dog owner
+  * @name: dog's name
+  * @age: dog's age
+  * @owner: dog owner's name
   */
 typedef struct dog
 {
@@ -14,6 +14,7 @@ typedef struct dog
 	float age;
 	char *owner;
 }
+dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
