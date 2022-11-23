@@ -34,7 +34,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%s%s", str, separator);
 		}
 		else
-			pintf("%s\n", str);
+			printf("%s\n", str);
 	}
 	va_end(ap);
 }
