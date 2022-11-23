@@ -81,7 +81,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", s1);
 				ops[b].f(args);
-				s1= s2;
+				s1 = s2;
 			}
 			b++;
 		}
